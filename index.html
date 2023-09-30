@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSA Codesprint 2023</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chart-container"></div>
+    <div>How mnay quartiles do you want to predict?</div>
+    <input id="input-quartiles" onchange="updatePredictedValues()">
+    <div id="input-values"></div>
+    <button id="submit-quartiles" onclick="updatePredictedQuartiles()">Submit</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.1/math.js"></script>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.1/plotly.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
